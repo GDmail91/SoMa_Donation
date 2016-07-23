@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_main"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="33dp"
+            android:text="Push 관리"
+            android:textSize="14sp"
+            android:textColor="#727272"
+            android:id="@+id/push_text"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/push_text"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingStart="7dp"
+            android:paddingLeft="7dp"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:id="@+id/push_setting">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="Push 알림 수신 허용"
+                android:textSize="16sp"
+                android:textColor="@color/mainTextColor"/>
+
+
+            <ToggleButton
+                android:layout_width="36dp"
+                android:layout_height="22dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/push_selector"
+                android:checked="true"
+                android:textOff=""
+                android:textOn=""
+                style="?android:attr/borderlessButtonStyle"
+                android:scaleType="fitCenter"
+                android:cropToPadding="true"
+                android:id="@+id/push_onoff"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="44.6dp"
+            android:layout_below="@id/push_setting"
+            android:text="프로그램 정보"
+            android:textSize="14sp"
+            android:textColor="#727272"
+            android:id="@+id/app_info_text"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/app_info_text"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="7dp"
+            android:paddingStart="7dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:id="@+id/app_info_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="버전 정보"
+                android:textSize="16sp"
+                android:textColor="@color/mainTextColor"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="15.3dp"
+                android:layout_marginEnd="15.3dp"
+                android:text="@string/app_version"
+                android:textColor="@color/colorBlue"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="44.6dp"
+            android:layout_below="@id/app_info_layout"
+            android:text="사용자 로그인 정보"
+            android:textSize="14sp"
+            android:textColor="#727272"
+            android:id="@+id/user_info_text"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/user_info_text"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="7dp"
+            android:paddingStart="7dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:id="@+id/user_info_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="사용자 이름"
+                android:textSize="16sp"
+                android:textColor="@color/mainTextColor"/>
+
+            <TextView
+                android:id="@+id/username_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="15.3dp"
+                android:layout_marginEnd="15.3dp"
+                android:textColor="#727272"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

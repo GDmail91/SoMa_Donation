@@ -1,0 +1,17 @@
+<resources>
+    <string name="baseURL">http://bufy.mooo.com:3000</string>
+    <string name="facebook_graph_url">https://graph.facebook.com</string>
+    <string name="app_name">백업포유</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="app_version">1.0</string>
+    <string name="intro_title">\"Back Up For You\"\n당신을 위한 후원</string>
+    <string name="intro_detail">백업포유는 어린이집, 요양원등 우리가 잊고 살던 분들에 대한 인식을 확대하고자 만들어진 후원 서비스입니다.</string>
+
+    <string name="facebook_app_id">264410920600532</string>
+
+    <string name="inapp_bill_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArxZewI30yGDiEf8fpbKXIMVq29lL1gJ1xf+7n+5Z/pmGTkhOYLFb6+xBwlsH0Z0t8dkpkx7TdkVW6AZksfjoD6quyp+qdbD8LhtKXeeuYMS14tbCh90doWumYNU1daF1y8rbnjc9LXoexZYoInluo72M0Y9cAWloYqoZs4MLAUFvJxbBA7iTJNeUjMKUMFaE6NnLipW1eEYLf0fGZrQQF5gh0+og5ttsr/09IoozqkFQ454skk2bDRFjOqjeoOd+YIPE/BBFqyV/uiBTZuyYv+rkayTHSQBthP0EC1+lLa7zKRc1m2mBxiBVC84a9s/w+Xr2HVWX59l+Ts765kPvqQIDAQAB</string>
+    <string name="banner_ad_unit_id">ca-app-pub-9202762599364510/7183373588</string>
+    <string name="ranking_banner_ad_unit_id"> ca-app-pub-9202762599364510/1775968385</string>
+    <string name="review_banner_ad_unit_id">ca-app-pub-9202762599364510/1636367584</string>
+</resources>

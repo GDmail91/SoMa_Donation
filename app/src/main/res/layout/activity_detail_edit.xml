@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_edit"/>
+
+    <RelativeLayout
+        android:id="@+id/progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#44000000"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/hand_black"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/components"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/toolbarLayout" >
+
+        <LinearLayout
+            android:id="@+id/edit_complete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:onClick="editPost">
+
+            <ImageView
+                android:id="@+id/isLike_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/check"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/complete_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical"
+                android:text="완료"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/components">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/select_img"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:onClick="onCheckPermission">
+
+                <ImageView
+                    android:id="@+id/detail_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@color/mainTextColor"/>
+
+                <ImageView
+                    android:id="@+id/get_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/get_image"/>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="타이틀"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/detail_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                android:layout_gravity="bottom"
+                android:hint="소개"
+                android:textSize="15sp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:gravity="top|center_horizontal" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

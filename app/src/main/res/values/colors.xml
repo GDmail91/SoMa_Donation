@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="main">#3F5599</color>
+    <color name="reviewColor">#FFFFFF</color>
+    <color name="reviewColorBack">#CCCCCC</color>
+    <color name="reviewColorUnCheck">#9FBBEE</color>
+
+<color name="colorPink">#FF4081</color>
+    <color name="colorBlue">#1133FF</color>
+
+    <color name="mainTextColor">#3F3F3F</color>
+    <color name="reverseTextColor">#DFDFCF</color>
+    <color name="mainButtonColor">#CFCFCF</color>
+    <color name="mainButtonPressedColor">#6F6F6F</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#AFAFAF</color>
+    <color name="black">#000000</color>
+</resources>

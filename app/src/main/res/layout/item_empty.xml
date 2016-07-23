@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/empty_item"
+    android:background="@color/reviewColor"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/refresh_txt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF3300"
+        android:text="데이터가 없습니다.\n아래로 드래그하여 다시 불러오세요"
+        android:textSize="30sp"
+        android:gravity="center" />
+
+</LinearLayout>

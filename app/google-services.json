@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "202682268653",
+    "firebase_url": "https://soma-bufy.firebaseio.com",
+    "project_id": "soma-bufy",
+    "storage_bucket": "soma-bufy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202682268653:android:185ddec4a751cd45",
+        "android_client_info": {
+          "package_name": "com.smd.soma_donation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202682268653-bearlnjh1b94r3vkkapb9otado6rkkuv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlj7yQbxFX_qFqfwkB7w9E_D-QeDGVtng"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
