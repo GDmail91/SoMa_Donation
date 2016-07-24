@@ -11,7 +11,7 @@ public class DTOAlarmItem implements Serializable {
     @SerializedName("alarm_id")
     int alarmId;
     @SerializedName("alarm_user_id")
-    int alarmUserId;
+    long alarmUserId;
     @SerializedName("alarm_category")
     String alarmCategory;
     @SerializedName("alarm_content_id")
@@ -27,7 +27,7 @@ public class DTOAlarmItem implements Serializable {
     @SerializedName("is_check")
     short isCheck;
 
-    public DTOAlarmItem(int alarmId, int alarmUserId, String alarmCategory, int alarmContentId, String contentTitle, String description, String contentImg, String alarmDate, short isCheck) {
+    public DTOAlarmItem(int alarmId, long alarmUserId, String alarmCategory, int alarmContentId, String contentTitle, String description, String contentImg, String alarmDate, short isCheck) {
         this.alarmId = alarmId;
         this.alarmUserId = alarmUserId;
         this.alarmCategory = alarmCategory;
@@ -47,7 +47,7 @@ public class DTOAlarmItem implements Serializable {
         this.alarmId = alarmId;
     }
 
-    public int getAlarmUserId() {
+    public long getAlarmUserId() {
         return alarmUserId;
     }
 

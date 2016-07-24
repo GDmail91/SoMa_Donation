@@ -11,7 +11,7 @@ public class DTORankItem implements Serializable {
     @SerializedName("content_id")
     int contentId;
     @SerializedName("content_user_id")
-    int contentUserId;
+    long contentUserId;
     @SerializedName("content_title")
     String contentTitle;
     @SerializedName("description")
@@ -46,7 +46,7 @@ public class DTORankItem implements Serializable {
         this.contentId = contentId;
     }
 
-    public int getContentUserId() {
+    public long getContentUserId() {
         return contentUserId;
     }
 
