@@ -85,7 +85,6 @@ BUFY에 적용된 기술
 ![Alt text](http://bufy.mooo.com/ranking/get/image?content_img=edit_example.png)
 
 >.rankEditDonation
-![Alt text](http://bufy.mooo.com/ranking/get/image?content_img=search_example.png)
 
 게시물을 수정할 수 있도록 **제목** 및 **설명**이 **EditText** View로 바뀌며 사진 클릭시 **갤러리**로 이동하여 사진을 가져올 수 있도록 하였다.
 
