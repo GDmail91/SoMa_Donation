@@ -21,6 +21,7 @@ import android.view.View;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookSdk;
 import com.facebook.login.LoginManager;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.smd.soma_donation.alarm.AlarmActivity;
 import com.smd.soma_donation.facebook.FacebookLogin;
 import com.smd.soma_donation.post.MyPostActivity;
@@ -91,6 +92,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(intent);
         } else if (id == R.id.logout_btn) {
             SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
+            // firebase unsubscribe
+            FirebaseMessaging.getInstance().unsubscribeFromTopic(""+pref.getLong("user_id", 0));
+
             SharedPreferences.Editor editor = pref.edit();
             editor.putString("access_token", "");
             editor.apply();
