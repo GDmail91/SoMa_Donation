@@ -122,7 +122,7 @@ BUFY에 적용된 기술
 푸시 수신시 **Notification Bar**에 알림이 뜨게 되는데 클릭시 **인텐트**가 전달된다.
 이러한 수신후 인텐트를 받아 **동작**을 **처리**하기위한 Activity 이다.
 
-#### 도구
+### 도구
 - AndroidStudio
 - Git/Github
 - SourceTree
