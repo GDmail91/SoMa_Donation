@@ -38,13 +38,13 @@ BUFY에 적용된 기술
 *개인정보 수집 및 로그인 페이지에 Depth 추가 등의 문제를 고려하여 현재 제외된 상태이다.)*
 
 #### 메인 화면 
->.MainActivity
->.MainFragment
->.ViewPagerAdapter
->.rank.RankItem
->.rank.RankListAdapter
->.review.ReviewItem
->.review.ReviewListAdapter
+>.MainActivity  
+>.MainFragment  
+>.ViewPagerAdapter  
+>.rank.RankItem  
+>.rank.RankListAdapter  
+>.review.ReviewItem  
+>.review.ReviewListAdapter  
 
 메인화면은 **Fragment**를 이용하여 사이드 메뉴와 **ViewPager**를 이용한 가로 스와이프 화면을 제공한다.
 
@@ -73,7 +73,7 @@ BUFY에 적용된 기술
 #### 게시물 화면
 ![Alt text](http://bufy.mooo.com/ranking/get/image?content_img=detail_example.png)
 
->.rank.DetailDonation
+>.rank.DetailDonation  
 
 사진, 제목, 설명의 글이 적혀있다.
 좋아요 버튼이 표시되며 **클릭시** 좋아요 상태에 따라 좋아요를  했다면 **채운손**, 안했다면 **빈손**으로 표시
@@ -84,15 +84,15 @@ BUFY에 적용된 기술
 #### 게시물 수정/등록 화면
 ![Alt text](http://bufy.mooo.com/ranking/get/image?content_img=edit_example.png)
 
->.rankEditDonation
+>.rankEditDonation  
 
 게시물을 수정할 수 있도록 **제목** 및 **설명**이 **EditText** View로 바뀌며 사진 클릭시 **갤러리**로 이동하여 사진을 가져올 수 있도록 하였다.
 
 ####알림
 ![Alt text](http://bufy.mooo.com/ranking/get/image?content_img=alarm_example.png) 
 
->.alarm.AlarmListAdapter
->.alarm.AlarmActivity
+>.alarm.AlarmListAdapter  
+>.alarm.AlarmActivity  
 
 **FCM**을 통해 전송되어진 알림 리스트가 나열된다.
 클릭시 연결된 **카테고리(ranking, monthly)**와 **ID**를 이용하여 해당 게시물로 이동하게된다.
@@ -100,25 +100,25 @@ BUFY에 적용된 기술
 #### 검색
 ![Alt text](http://bufy.mooo.com/ranking/get/image?content_img=search_example.png)
 
->.search.SearchActivity
->.rank.RankListAdapter
+>.search.SearchActivity  
+>.rank.RankListAdapter  
 
 **타이틀**을 이용한 검색이 가능하며 검색결과를 리스트로 보여준다.
 
 #### 내글 보기
 ![Alt text](http://bufy.mooo.com/ranking/get/image?content_img=my_list_example.png)
 
->.post.MyPostActivity
->.post.PostListActivity
+>.post.MyPostActivity  
+>.post.PostListActivity  
 
 현재까지 작성한 **게시물**과 각 게시물별 **좋아요**, **조회수**를 확인 할 수 있다.
 
 #### 후원 하기
 ![Alt text](http://bufy.mooo.com/ranking/get/image?content_img=donate_example.png)
 
->.donate.DonateActivity
->.donate.InicisWebViewClient
->.donate.PaymentScheme
+>.donate.DonateActivity  
+>.donate.InicisWebViewClient  
+>.donate.PaymentScheme  
 
 **이달의 후원**에서 후원하기 클릭시 연결되는 **WebView** 액티비티이다.
 **PG사 결제 모듈**과 연결하여 원하는 금액을 결제할 수 있는 **결제페이지**로 연결된다.
@@ -126,7 +126,7 @@ BUFY에 적용된 기술
 #### 후원 문의
 ![Alt text](http://bufy.mooo.com/ranking/get/image?content_img=contact_example.png)
 
->.ContactActivity
+>.ContactActivity  
 
 **BUFY**에서 제공되는 후원 방식 외에 물건을 통한 기증 등 **기타 후원 문의**가 필요할 수 있기 때문에 후원 문의를 제공한다.
 여기서 작성되어지는 메시지는 **읽기 권한** 이상을 가진 **관리자**에게 보여지며 **담당자**가 **Email**을 통해 답장 할 수 있도록 **Email** 또한 표시하도록 하였다.
@@ -134,7 +134,7 @@ BUFY에 적용된 기술
 #### 설정
 ![Alt text](http://bufy.mooo.com/ranking/get/image?content_img=setting_example.png)
 
->.SettingActivity
+>.SettingActivity  
 
 설정페이지에는 푸시수신을 설정할 수 있는 **푸시 수신여부**, **현재 버전 정보**, **로그인 사용자 이름** 을 보여준다.
 
@@ -143,7 +143,7 @@ BUFY에 적용된 기술
 #### 푸시 수신
 ![Alt text](http://bufy.mooo.com/ranking/get/image?content_img=push_noti_example.png)
 
->.LinkActivity
+>.LinkActivity  
 
 푸시 수신시 **Notification Bar**에 알림이 뜨게 되는데 클릭시 **인텐트**가 전달된다.
 이러한 수신후 인텐트를 받아 **동작**을 **처리**하기위한 Activity 이다.
